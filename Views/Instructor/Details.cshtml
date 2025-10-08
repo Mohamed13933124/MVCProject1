@@ -1,0 +1,44 @@
+﻿@model Instructor
+
+
+<h1>@Model.Name</h1>
+
+
+
+<table class="table table-dark">
+
+<thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Salary</th>
+        <th scope="col">address</th>
+        <th scope="col">DepartmentID</th>
+        <th scope="col">CourceID</th>
+
+    </tr>
+</thead>
+
+
+<tbody>
+  
+        <tr>
+        <td>@Model.ID</td>
+        <td><a href="#">@Model.Name</a></td>
+        <td> <img src="/images/@Model.Image" style="width: 40px"> </td>
+        <td>@Model.Salary</td>
+        <td>@Model.address</td>
+        <td>@Model.DepartmentID</td>
+        <td>@Model.CourceID</td>
+
+        </tr>
+ 
+
+
+</tbody>
+</table>
+
+
+
+<button type="button" class="btn btn-info"><a href="/instructor/index">back</a></button>
